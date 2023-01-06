@@ -1,6 +1,9 @@
 import { Image, StyleSheet, Text, TextInput, View } from "react-native";
 import { Entypo } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
+import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
+import LoginBtn from "../components/LoginBtn";
+import LoginBtnOutlined from "../components/LoginBtnOutlined";
 
 const Login = () => {
     return (
@@ -15,10 +18,20 @@ const Login = () => {
                     <TextInput style={styles.textInput} placeholder="E-mail ID" />
                 </View>
                 <View style={styles.formGroup}>
-                    <MaterialIcons name="lock" size={24} color="rgba(40, 40, 40, 0.5)" />
-                    <TextInput style={styles.textInput} placeholder="E-mail ID" />
+                    <MaterialIcons name="lock" size={18} color="rgba(40, 40, 40, 0.5)" />
+                    <TextInput style={styles.textInput} placeholder="Password" />
                 </View>
-                <Text>Forgot password?</Text>
+                <Text style={styles.forgotPasswordText}>Forgot password?</Text>
+                <LoginBtn />
+                <View style={styles.divider}>
+                    <View style={{ borderTopWidth: 1, borderTopColor: '#29292980', flex: 1, marginTop: 8, marginHorizontal: 8 }}></View>
+                    <Text style={{ color: '#29292980' }}>OR</Text>
+                    <View style={{ borderTopWidth: 1, borderTopColor: '#29292980', flex: 1, marginTop: 8, marginHorizontal: 8 }}></View>
+                </View>
+                <LoginBtnOutlined />
+                <Text style={{ color: '#29292980', textAlign: 'center' }}>Don't have account? <Text style={{ fontSize: 18, color: 'black' }}>Sign Up</Text></Text>
+
+
             </View>
         </View>
     );
@@ -63,5 +76,15 @@ const styles = StyleSheet.create({
         borderColor: 'rgba(40, 40, 40, 0.5)',
         color: '#363636',
         flex: 1
+    },
+    forgotPasswordText: {
+        textAlign: 'right',
+        color: 'rgba(40, 40, 40, 0.5)',
+    },
+    divider: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: '100%'
     }
+
 })
