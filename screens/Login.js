@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     screen: {
         flex: 1,
         padding: 24,
-        paddingTop: 36,
+        paddingTop: 80,
         alignItems: "center",
     },
     imageContainer: {
