@@ -2,10 +2,10 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 
-const Card1 = () => {
+const Card2 = () => {
     return (
         <View style={styles.cardContainer}>
-            <Image style={styles.cardImage} source={require('../assets/images/person1.png')} />
+            <Image style={styles.cardImage} source={require('../assets/images/person2.png')} />
             <View style={styles.infoContainer}>
                 <Text style={{ textAlign: 'right', color: '#29292980' }}>FROM</Text>
                 <View style={styles.detailsContainer}>
@@ -34,7 +34,7 @@ const Card1 = () => {
     );
 };
 
-export default Card1;
+export default Card2;
 const styles = StyleSheet.create({
     cardContainer: {
         marginBottom: 8
