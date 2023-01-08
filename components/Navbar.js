@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Ionicons } from '@expo/vector-icons';
-import { MaterialIcons } from '@expo/vector-icons';
-import { Fontisto } from '@expo/vector-icons';
+import { Ionicons } from "@expo/vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
+import { Fontisto } from "@expo/vector-icons";
 const Navbar = () => {
     return (
         <View style={styles.navContainer}>
@@ -14,10 +14,13 @@ const Navbar = () => {
                 <Text style={styles.text}>Salon</Text>
             </View>
             <View style={styles.iconContainer}>
-                <MaterialIcons name="account-circle" size={24} color="#BDBDBD" />
+                <MaterialIcons
+                    name="account-circle"
+                    size={24}
+                    color="#BDBDBD"
+                />
                 <Text style={styles.text}>Account</Text>
             </View>
-
         </View>
     );
 };
@@ -26,16 +29,16 @@ export default Navbar;
 
 const styles = StyleSheet.create({
     navContainer: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
+        flexDirection: "row",
+        justifyContent: "space-around",
         padding: 8,
         borderTopWidth: 1,
-        borderTopColor: '#BDBDBD'
+        borderTopColor: "rgba(0, 0, 0, 0.1)",
     },
     iconContainer: {
-        alignItems: "center"
+        alignItems: "center",
     },
     text: {
-        color: '#BDBDBD'
-    }
-})
+        color: "#BDBDBD",
+    },
+});
